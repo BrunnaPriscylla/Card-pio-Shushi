@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a; /* Fundo preto */
+    color: #ff0000; /* Texto vermelho */
+    margin: 0;
+    padding: 0;
+}
+
+#geral {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FORMATANDO CABEÇALHO */
+#cabecalho {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#logo img {
+    max-width: 100%; /* Ajusta a largura da imagem para não ultrapassar o tamanho do container */
+    height: auto;    /* Mantém a proporção da altura com base na largura ajustada */
+    max-height: 80px; /* Ajuste a altura máxima da logo conforme necessário */
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+#menu a {
+    padding: 0 10px;
+    color: #ff0000; /* Links vermelhos */
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+#menu a:hover {
+    color: #ffffff; /* Links brancos ao passar o mouse */
+    background-color: #000000; /* Fundo preto ao passar o mouse */
+    border-radius: 4px;
+}
+
+/* FORMATANDO O CORPO DA PÁGINA */
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.conteudo {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+#direito {
+    background-image: url('/imagens/hamburguer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+/* FORMATANDO O RODAPÉ */
+footer {
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+    font-size: 0.8em;
+    text-align: center;
+    color: #ffffff; /* Texto branco */
+    background-color: #000000; /* Fundo preto */
+}
+
+/* estiloshome.css */
+
+/* Estilo geral para a seção Home */
+#home {
+    background-color: #0a0a0a;
+    color: #f0e7e7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Estilo para a introdução */
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff0000; /* Cor do título */
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ff0000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo para promoções */
+.promoções {
+    margin-top: 40px;
+}
+
+.promoções h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.promo-text {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promo-text h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.promo-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #007a0a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #005700;
+}
+
+/* estilos.css */
+
+/* Estilo geral para a sacola */
+#itens {
+    width: 100%;
+    min-height: 500px;
+    background-color: #1c1c1c; /* Fundo escuro para destacar os itens */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo para cada item na sacola */
+.item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    background-color: #333; /* Fundo para itens individuais */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a descrição do item */
+.descSacola {
+    width: 30%;
+    color: #f0e7e7;
+}
+
+/* Estilo para a quantidade */
+.quantidade {
+    width: 10%;
+    color: #f0e7e7;
+}
+
+/* Estilo para o valor do item */
+.vlrSacola {
+    width: 20%;
+    color: #f0e7e7;
+}
+
+/* Estilo para o total do item */
+.totItem {
+    width: 20%;
+    color: #f0e7e7;
+    text-align: right;
+}
+
+/* Estilo para o botão de remover */
+.btnRemover {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o botão de remover */
+.btn-remover {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+/* Estilo para o ícone dentro do botão */
+.btn-remover img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+/* Efeito ao passar o mouse sobre o botão de remover */
+.btn-remover:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+/* Efeito ao clicar no botão de remover */
+.btn-remover:active {
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+

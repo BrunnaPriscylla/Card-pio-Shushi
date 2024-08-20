@@ -1,0 +1,217 @@
+/* FORMATANDO CORPO DO CARDÁPIO */
+#cardapio {
+    width: 65%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para o cardápio */
+    color: #000000; /* Texto preto */
+}
+
+/* FORMATANDO OS CARDS */
+.card {
+    width: 150px; /* Aumentado para melhor visualização */
+    height: 350px; /* Ajustado para caber melhor */
+    margin: 8px;
+    border: 1px solid #000000; /* Borda preta ao redor dos cards */
+    border-radius: 8px; /* Cantos arredondados */
+    background-color: #f9f9f9; /* Fundo levemente cinza claro para os cards */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+/* IMAGEM NO CARD */
+.imgCard {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCard img {
+    width: 100px; /* Aumentado para melhor visualização */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* DESCRIÇÃO NO CARD */
+.descricao {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em; /* Ajustado para melhor legibilidade */
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 0;
+    background-color: #ffffff; /* Fundo branco para o texto */
+}
+
+/* DETALHES DO CARD */
+.detalhe {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin: 2px;
+    font-size: 0.8em; /* Ajustado para melhor legibilidade */
+    background-color: #ffffff; /* Fundo branco para os detalhes */
+}
+
+/* VALOR DO CARD */
+.valor {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ff0000; /* Valor em vermelho */
+    font-size: 0.9em; /* Ajustado para melhor legibilidade */
+    padding: 0 5px;
+    background-color: #ffffff; /* Fundo branco para o valor */
+}
+
+/* BOTÃO ADICIONAR */
+.btnAdd {
+    width: 100%;
+    height: 30px; /* Aumentado para melhor visualização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.btnAdd button {
+    width: 120px; /* Aumentado para melhor visualização */
+    height: 30px; /* Ajustado para melhor visualização */
+    font-size: 0.8em; /* Ajustado para melhor legibilidade */
+    font-weight: bold;
+    background-color: #000000; /* Fundo preto */
+    border: 1px solid #000000; /* Borda preta */
+    color: #ffffff; /* Texto branco */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.btnAdd button:hover {
+    background-color: #007a0a; /* Verde ao passar o mouse */
+    color: #ffffff; /* Texto branco */
+}
+
+.btnAdd button:active {
+    background-color: #ff0000; /* Vermelho quando clicado */
+    color: #ffffff; /* Texto branco */
+}
+
+/* FORMATANDO A SACOLA */
+#sacola {
+    width: 30%;
+    min-height: 500px; /* Ajustado para melhor visualização */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para a sacola */
+    color: #000000; /* Texto preto */
+    border: 1px solid #000000; /* Borda preta ao redor da sacola */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+/* BOTÃO DA SACOLA */
+#btnSacola {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+    padding: 0 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaço inferior */
+}
+
+#btnSacola img {
+    width: 20px; /* Aumentado para melhor visualização */
+    height: 20px;
+    border-radius: 50%; /* Circular */
+    background-color: #ffffff; /* Fundo branco */
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* ITENS NA SACOLA */
+#itens {
+    width: 100%;
+    min-height: 400px; /* Ajustado para melhor visualização */
+}
+
+.item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* Alinhado à esquerda e direita */
+    align-items: center;
+    border-bottom: 1px solid #000000; /* Linha separadora preta */
+    padding: 5px;
+}
+
+/* estilos/estiloscardapio.css */
+
+/* Estilo para o botão de remover */
+.btnRemover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnRemover .remover {
+    background-color: #f44336; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 50%; /* Botão redondo */
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    outline: none; /* Remove o contorno padrão ao clicar */
+}
+
+.btnRemover .remover img {
+    width: 16px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 16px;
+}
+
+.btnRemover .remover:hover {
+    background-color: #c62828; /* Cor de fundo quando o botão é hover */
+}
+
+.btnRemover .remover:active {
+    background-color: #b71c1c; /* Cor de fundo quando o botão é clicado */
+}
+
+.btnRemover img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.descSacola, .quantidade, .vlrSacola, .btnRemover {
+    width: 20%; /* Ajustado para melhor visualização */
+    text-align: center;
+}
+
+/* TOTAL */
+#total {
+    width: 100%;
+    font-size: 2em; /* Ajustado para melhor visualização */
+    color: #ff0000; /* Total em vermelho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #000000; /* Linha superior preta */
+}
+

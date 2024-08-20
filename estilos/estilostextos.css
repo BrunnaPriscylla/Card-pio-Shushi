@@ -1,0 +1,40 @@
+/* Estilo para a seção "Sobre" */
+#sobre {
+    background-color: #1a1a1a; /* Cor de fundo escura para contraste */
+    color: #f0e7e7; /* Cor do texto em contraste com o fundo */
+    padding: 40px 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem para espaçamento externo */
+    max-width: 1000px; /* Largura máxima para centralizar o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    text-align: center; /* Centraliza o texto */
+}
+
+#sobre h2 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #ff0000; /* Cor do título */
+    letter-spacing: 2px; /* Espaçamento das letras */
+}
+
+#sobre p {
+    font-size: 1.2em; /* Tamanho do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 20px; /* Espaço entre parágrafos */
+    color: #f0e7e7; /* Cor do texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #sobre {
+        padding: 20px 10px; /* Ajusta o padding em telas menores */
+    }
+
+    #sobre h2 {
+        font-size: 2em; /* Ajusta o tamanho do título */
+    }
+
+    #sobre p {
+        font-size: 1em; /* Ajusta o tamanho do texto */
+    }
+}

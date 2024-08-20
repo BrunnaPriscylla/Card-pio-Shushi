@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Aju - Cadastro</title>
+
+    <link rel='shortcut icon' href='imagens/favicon.ico'>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilosformulario.css">
+</head>
+
+<body>
+    <div id="geral">
+        <section id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagens/logo.jpg" alt="Logo Japan Aju">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <a href="index.html">Home</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+        </section>
+
+        <section id="conteudo">
+            <div id="form">
+                <div class="divInput">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="input" required />
+                </div>
+
+                <div class="divInput">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="input" required />
+                </div>
+
+                <div class="divInput">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" class="input" required />
+                </div>
+
+                <div class="divInput">
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" id="masculino" value="M" /> Masculino
+                    <input type="radio" name="sexo" id="feminino" value="F" /> Feminino
+                </div>
+
+                <div class="divInput">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" class="input" required />
+                </div>
+
+                <div class="divInput">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" class="input" required />
+                </div>
+
+                <div id="divEnde">
+                    <div class="divInput">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" name="logradouro" id="logradouro" class="input inputEnde" required />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="numero">Número</label>
+                        <input type="text" name="numero" id="numero" class="input" required />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento" class="input" />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="input inputEnde" required />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" class="input inputEnde" required />
+                    </div>
+                </div>
+
+                <div class="divInput">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" class="input" required />
+                </div>
+
+                <div class="divInput">
+                    <input type="checkbox" name="promo" id="promo" value="S" />
+                    Deseja receber nossas promoções e eventos?
+                </div>
+
+                <div id="divBtn">
+                    <button id="btnEnviar">Cadastrar</button>
+                    <button id="btnLimpar" type="reset">Limpar</button>
+                </div>
+            </div>
+        </section>
+
+        <footer id="rodape">
+            <p>&copy; 2023 Todos os direitos reservados para Japan Aju</p>
+            <p>CNPJ: 00.008.111/1XXXX-00 - Rua Sakura, 123, Aracaju, SE, 49066-321 - Tel.: (79) 91011-1214</p>
+        </footer>
+    </div>
+</body>
+
+</html>

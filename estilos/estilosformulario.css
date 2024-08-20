@@ -1,0 +1,107 @@
+/* FORMATANDO FORMULÁRIO */
+#form {
+    width: 700px;
+    min-height: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    color: #000000; /* Texto preto */
+    border: 1px solid #000000; /* Borda preta */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+}
+
+/* ESTILO DO TÍTULO */
+h1 {
+    letter-spacing: 6px;
+    color: #ff0000; /* Cor vermelha para o título */
+}
+
+/* DIV DE ENTRADA */
+.divInput {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ESTILO DOS RÓTULOS */
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    color: #000000; /* Texto preto para labels */
+}
+
+/* ESTILO DOS CAMPOS DE ENTRADA */
+.input {
+    width: 100%; /* Ajustado para 100% da largura do container */
+    padding: 15px 10px;
+    border: 2px solid #000000; /* Borda preta */
+    border-radius: 5px;
+    color: #000000; /* Texto preto */
+    font-size: 0.8em;
+    background-color: #f9f9f9; /* Fundo cinza claro */
+}
+
+/* OCULTAR DIV ENDEREÇO */
+#divEnde {
+    display: none !important;
+}
+
+/* ESTILO DOS BOTÕES */
+#divBtn {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espaço superior */
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    transition: background-color 0.2s, opacity 0.2s; /* Transições suaves */
+}
+
+/* BOTÃO CADASTRAR */
+#btnLimpar {
+    background-color: #006400; /* Verde escuro */
+}
+
+#btnLimpar:hover {
+    opacity: 0.8;
+    background-color: #004d00; /* Verde ainda mais escuro ao passar o mouse */
+}
+
+/* BOTÃO LIMPAR */
+#btnEnviar {
+    background-color: #ff0000; /* Vermelho */
+}
+
+#btnEnviar:hover {
+    opacity: 0.8;
+    background-color: #cc0000; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* ESTILO DO TEXTAREA */
+textarea {
+    width: 100%; /* Ajustado para 100% da largura do container */
+    height: 300px;
+    resize: none; /* Desabilitar redimensionamento */
+    padding: 15px; /* Padding para consistência */
+    border: 2px solid #000000; /* Borda preta */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    color: #000000; /* Texto preto */
+    font-size: 0.8em;
+}
